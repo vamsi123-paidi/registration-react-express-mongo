@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; 
+  background: transparent;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 750px; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+button {
+  background-color: #2575fc;
+  color: white;
+  font-size: 1.1rem;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #6a11cb; 
+  transform: scale(1.05); 
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+label span {
+  color: red; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #2575fc;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+button.view-btn {
+  background-color: #28a745;
+  margin-top: 20px;
+}
+
+button.view-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  button.view-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+    max-width: 100%; 
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  button.view-btn {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
