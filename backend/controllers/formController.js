@@ -2,8 +2,8 @@ const Form = require('../models/form');
 
 const submitForm = async (req, res) => {
   try {
-    const residentialAddress = JSON.parse(req.body.residentialAddress);
-    const permanentAddress = JSON.parse(req.body.permanentAddress);
+    const residentialAddress = req.body.residentialAddress;
+    const permanentAddress = req.body.permanentAddress;
 
     const documents = req.files.map((file) => ({
       fileName: file.originalname,

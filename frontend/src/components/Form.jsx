@@ -53,10 +53,10 @@ const Form = () => {
       form.documents.forEach((doc) => formData.append('documents', doc));
 
       const response = await axios.post(
-        'http://localhost:5000/api/form/submit',
+        'https://registration-react-express-mongo.onrender.com',
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
-      );
+      );s
 
       alert(response.data.message);
       setIsSubmitted(true);
