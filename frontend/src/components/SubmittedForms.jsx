@@ -9,7 +9,7 @@ const SubmittedForms = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/form/submitted') 
+      .get('https://registration-react-express-mongo.onrender.com/api/form/submitted') 
       .then((response) => {
         setForms(response.data);
       })
