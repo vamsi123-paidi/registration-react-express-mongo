@@ -1,4 +1,4 @@
-const Form = require('../models/Form');
+const Form = require('../models/form');
 
 const submitForm = async (req, res) => {
   try {
